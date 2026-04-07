@@ -1,35 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Styled Website</title>
+    <title>My Cherry Blossom Site</title>
     <style>
-        /* This is where we change the look of the page */
         body {
-            background-color: #f0f8ff; /* A nice light blue */
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Changes the font */
-            color: #333333; /* Dark grey text (easier to read than pure black) */
-            text-align: center; /* Centers everything */
-            padding: 50px;
+            /* A beautiful light cherry-blossom pink */
+            background-color: #FFD1DC; 
+            /* Setting the global font color to white */
+            color: #FFFFFF;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding: 50px 20px;
+            margin: 0;
         }
 
         h1 {
-            color: #2e8b57; /* A sea-green color for the heading */
+            font-size: 3.5rem;
+            /* Adding a very soft shadow so white text is easy to read */
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.4rem;
+            font-weight: 300;
+            margin-bottom: 40px;
+        }
+
+        .image-container {
+            margin-top: 20px;
         }
 
         img {
-            max-width: 300px; /* Keeps your image from being too huge */
-            border-radius: 15px; /* Rounds the corners of your image */
-            border: 5px solid white;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            max-width: 80%;
+            width: 600px;
+            border-radius: 20px;
+            /* White border to match the font */
+            border: 10px solid #FFFFFF;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            transition: transform 0.4s ease;
+        }
+
+        img:hover {
+            transform: scale(1.02);
         }
     </style>
 </head>
 <body>
 
-    <h1>Welcome to My Styled Page!</h1>
-    <p>I changed the font, the colors, and added an image below.</p>
+    <h1>Cherry Blossoms</h1>
+    <p>Welcome to my beautiful, pink-themed website.</p>
 
-    <img src="https://placedog.net/500" alt="A cute dog">
+    <div class="image-container">
+        <img src="http://googleusercontent.com/image_collection/image_retrieval/6460290320600075603_0" alt="Beautiful cherry blossoms in bloom">
+    </div>
 
 </body>
 </html>
