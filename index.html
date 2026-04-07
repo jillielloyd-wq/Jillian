@@ -1,58 +1,88 @@
+That makes perfect sense! You are essentially adding a "content section" and a "resource section" to your site.
+
+I’ve updated the code with a new, reliable image link, and I’ve added two "boxes" (which we call divs in coding) to hold your history blurb and your link.
+
+The Updated Code
+Copy and paste this entire block into your index.html:
+
+HTML
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Cherry Blossom Site</title>
+    <title>Cherry Blossom History</title>
     <style>
         body {
-            /* A beautiful light cherry-blossom pink */
-            background-color: #FFD1DC; 
-            /* Setting the global font color to white */
+            background-color: #FFD1DC; /* Light pink */
             color: #FFFFFF;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
             padding: 50px 20px;
             margin: 0;
+            line-height: 1.6;
         }
 
         h1 {
-            font-size: 3.5rem;
-            /* Adding a very soft shadow so white text is easy to read */
-            text-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-            margin-bottom: 10px;
-        }
-
-        p {
-            font-size: 1.4rem;
-            font-weight: 300;
-            margin-bottom: 40px;
-        }
-
-        .image-container {
-            margin-top: 20px;
+            font-size: 3rem;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.1);
         }
 
         img {
-            max-width: 80%;
-            width: 600px;
+            max-width: 90%;
+            width: 500px;
             border-radius: 20px;
-            /* White border to match the font */
-            border: 10px solid #FFFFFF;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-            transition: transform 0.4s ease;
+            border: 8px solid #FFFFFF;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
         }
 
-        img:hover {
-            transform: scale(1.02);
+        /* This creates the nice white boxes for your text */
+        .content-box {
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+            color: #444; /* Darker text inside the box for readability */
+            max-width: 600px;
+            margin: 20px auto; /* Centers the box */
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: left; /* Aligns the text inside to the left */
+        }
+
+        .link-box {
+            background-color: #FFFFFF;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 15px;
+            border-radius: 15px;
+        }
+
+        /* Styling the link so it looks pretty */
+        a {
+            color: #ff69b4; /* Hot pink link */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
     <h1>Cherry Blossoms</h1>
-    <p>Welcome to my beautiful, pink-themed website.</p>
+    
+    <img src="http://googleusercontent.com/image_collection/image_retrieval/7181610780017050092_0" alt="Beautiful pink cherry blossoms">
 
-    <div class="image-container">
-        <img src="http://googleusercontent.com/image_collection/image_retrieval/6460290320600075603_0" alt="Beautiful cherry blossoms in bloom">
+    <div class="content-box">
+        <h3>A Brief History</h3>
+        <p>Cherry blossoms, known as <strong>Sakura</strong> in Japan, have been celebrated for centuries. They represent a time of renewal and the fleeting nature of life. In 1912, Japan gifted over 3,000 trees to the United States as a symbol of friendship, which is why we see so many beautiful blooms in Washington D.C. every spring!</p>
+    </div>
+
+    <div class="link-box">
+        <span>Want to learn more? </span>
+        <a href="https://www.nps.gov/subjects/cherryblossom/history-of-the-cherry-trees.htm" target="_blank">
+            Click here for the full history
+        </a>
     </div>
 
 </body>
