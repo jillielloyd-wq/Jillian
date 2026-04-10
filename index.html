@@ -4,10 +4,15 @@
     <title>My Cherry Blossom Site</title>
 <style>
     body { 
-        background-color: #FFD1DC;  
-        color: #FFFFFF;  
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-        text-align: center; 
+        /* Light cherry-blossom pink background */ 
+        background-color: #FFD1DC; 
+        
+        /* White font color */
+        color: #FFFFFF; 
+        
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+        text-align: center;
         padding: 50px 20px;
         margin: 0;
     }
@@ -24,7 +29,7 @@
         margin-bottom: 40px; 
     }
 
-    /* New layout to help the images fit well together */
+    /* This container helps the three images sit side-by-side */
     .image-container { 
         display: flex;
         flex-wrap: wrap;
@@ -35,9 +40,12 @@
 
     img {
         max-width: 100%; 
-        width: 400px; /* Slightly smaller so three can fit across the screen */
+        width: 350px; /* Adjusted size so all 3 fit well together */
         border-radius: 20px; 
+        
+        /* White border to match your style */ 
         border: 10px solid #FFFFFF; 
+        
         box-shadow: 0 15px 35px rgba(0,0,0,0.1); 
         transition: transform 0.4s ease; 
     }
@@ -46,10 +54,9 @@
         transform: scale(1.05);
     }
 
-    /* Styling for your new links */
+    /* Styling for the new links */
     .links-section {
         margin-top: 50px;
-        padding: 20px;
     }
 
     .links-section a {
@@ -57,7 +64,7 @@
         text-decoration: none;
         font-weight: bold;
         display: block;
-        margin: 10px 0;
+        margin: 15px 0;
         font-size: 1.2rem;
     }
 
@@ -66,7 +73,7 @@
     }
 
     ul {
-        list-style-type: none; /* Removing bullets to match the clean look */
+        list-style-type: none;
         padding: 0;
     }
 </style>
@@ -89,16 +96,15 @@
     <div class="image-container">
         <img src="http://googleusercontent.com/image_collection/image_retrieval/6460290320600075603_0" alt="Beautiful cherry blossoms in bloom">
         
-        <img src="https://images.unsplash.com/photo-1522383225653-ed111181a951?q=80&w=2076&auto=format&fit=crop" alt="Deep pink cherry blossoms">
+        <img src="http://googleusercontent.com/image_collection/image_retrieval/13180716779980240893_0" alt="Soft pink cherry blossoms">
         
-        <img src="https://images.unsplash.com/photo-1493673272479-a7e6c8369948?q=80&w=2070&auto=format&fit=crop" alt="Light pink cherry blossoms">
+        <img src="http://googleusercontent.com/image_collection/image_retrieval/13180716779980240893_1" alt="Vibrant pink cherry blossoms">
     </div>
 
     <div class="links-section">
-        <h3>Learn More</h3>
-        <a href="https://www.nps.gov/subjects/cherryblossom/bloom-development.htm">The Science of Blossom Color Development</a>
-        <a href="https://www.arborday.org/trees/treeguide/treedetail.cfm?itemID=919">Ideal Soil and Growing Conditions</a>
-        <a href="https://www.loc.gov/item/today-in-history/march-27/">The History of Cherry Blossoms in America</a>
+        <a href="https://www.nps.gov/subjects/cherryblossom/bloom-development.htm">How different cherry blossom colors develop</a>
+        <a href="https://www.arborday.org/trees/treeguide/treedetail.cfm?itemID=919">Ideal conditions for cherry blossoms to grow</a>
+        <a href="https://www.loc.gov/item/today-in-history/march-27/">The history of cherry blossoms</a>
     </div>
 
 </body>
