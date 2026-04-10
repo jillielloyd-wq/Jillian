@@ -4,66 +4,101 @@
     <title>My Cherry Blossom Site</title>
 <style>
     body { 
-        /* this is where I set the background color for my page, and where I adjusted the font, along with editing some of the spacing */
-        
-        /* A beautiful light cherry-blossom pink */ 
-        background-color: #FFD1DC;  /* the color ID for the light-pink background */
-        
-        /* Setting the global font color to white */  /* White font color */
-        color: #FFFFFF; 
-        
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* example of fonts that are used */
-        
-        text-align: center; /* more spacing adjustments, so the website is more appealing */
+        background-color: #FFD1DC;  
+        color: #FFFFFF;  
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        text-align: center; 
         padding: 50px 20px;
         margin: 0;
     }
 
     h1 { 
-        /* for my heading, this is the detail where I have my heading have a slight shadow so it is more visually appealing */
-        font-size: 3.5rem; /* this is font size */
-        
-        /* Adding a very soft shadow so white text is easy to read */ /* The code for the shadow */
-        text-shadow: 2px 2px 8px rgba(0,0,0,0.1); /* The measurements for the shadow */
-        
-        margin-bottom: 10px; /* A margin adjustment for organization */
+        font-size: 3.5rem; 
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.1); 
+        margin-bottom: 10px; 
     }
 
     p {
-        font-size: 1.4rem; /* the text setting that I have set for my words in the paragraph */
-        font-weight: 300; /* How the font looks */
-        margin-bottom: 40px; /* More spacing for clarity */
+        font-size: 1.4rem; 
+        font-weight: 300; 
+        margin-bottom: 40px; 
     }
 
+    /* New layout to help the images fit well together */
     .image-container { 
-        /* This is the border around my photo */
-        margin-top: 20px; /* The measurement for my margin's spacing */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px; 
     }
 
     img {
-        max-width: 80%; 
-        width: 600px;
+        max-width: 100%; 
+        width: 400px; /* Slightly smaller so three can fit across the screen */
         border-radius: 20px; 
-        
-        /* White border to match the font */ 
         border: 10px solid #FFFFFF; 
-        
         box-shadow: 0 15px 35px rgba(0,0,0,0.1); 
         transition: transform 0.4s ease; 
     }
 
     img:hover {
-        transform: scale(1.02);
+        transform: scale(1.05);
+    }
+
+    /* Styling for your new links */
+    .links-section {
+        margin-top: 50px;
+        padding: 20px;
+    }
+
+    .links-section a {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-weight: bold;
+        display: block;
+        margin: 10px 0;
+        font-size: 1.2rem;
+    }
+
+    .links-section a:hover {
+        text-decoration: underline;
+    }
+
+    ul {
+        list-style-type: none; /* Removing bullets to match the clean look */
+        padding: 0;
     }
 </style>
 </head>
 <body>
 
-    <h1>Cherry Blossoms</h1> <!--This is the title that is seen on the top of my page, telling what the website is about -->
-    <p>Welcome to my beautiful, pink-themed website.</p> <!-- This is what writting would be displayed on the website, in a speech bubble or a blurb -->
+    <h1>Cherry Blossoms</h1>
+    <p>Welcome to my beautiful, pink-themed website.</p>
+    
+    <h2>About the Creator</h2>
+    <p>I am a junior who goes to the Hun school, I like to learn and read, I think Cherry blossoms are very pretty.</p>
+    <p>My top 3 colors include white to various shades of pink, and certain shades of yellow or green.</p>
+    
+    <ul>
+        <li>Green is rare</li>
+        <li>Yellow is rare</li>
+        <li>Shades of pink are the most common</li>
+    </ul>
 
-    <div class="image-container"> <!-- This is the link for my photo -->
+    <div class="image-container">
         <img src="http://googleusercontent.com/image_collection/image_retrieval/6460290320600075603_0" alt="Beautiful cherry blossoms in bloom">
+        
+        <img src="https://images.unsplash.com/photo-1522383225653-ed111181a951?q=80&w=2076&auto=format&fit=crop" alt="Deep pink cherry blossoms">
+        
+        <img src="https://images.unsplash.com/photo-1493673272479-a7e6c8369948?q=80&w=2070&auto=format&fit=crop" alt="Light pink cherry blossoms">
+    </div>
+
+    <div class="links-section">
+        <h3>Learn More</h3>
+        <a href="https://www.nps.gov/subjects/cherryblossom/bloom-development.htm">The Science of Blossom Color Development</a>
+        <a href="https://www.arborday.org/trees/treeguide/treedetail.cfm?itemID=919">Ideal Soil and Growing Conditions</a>
+        <a href="https://www.loc.gov/item/today-in-history/march-27/">The History of Cherry Blossoms in America</a>
     </div>
 
 </body>
