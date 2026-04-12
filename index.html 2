@@ -24,6 +24,7 @@
         margin-bottom: 40px; 
     }
 
+    /* This container makes sure the images fit well on the page */
     .image-container { 
         display: flex;
         flex-wrap: wrap;
@@ -33,12 +34,11 @@
     }
 
     img {
-        /* This ensures all three photos look uniform in size */
         width: 350px; 
         height: 250px;
         object-fit: cover; 
-        
         border-radius: 20px; 
+        /* Your white border */
         border: 10px solid #FFFFFF; 
         box-shadow: 0 15px 35px rgba(0,0,0,0.1); 
         transition: transform 0.4s ease; 
@@ -79,7 +79,6 @@
     
     <h2>About the Creator</h2>
     <p>I am a junior who goes to the Hun school, I like to learn and read, I think Cherry blossoms are very pretty.</p>
-    <p>My top 3 colors include white to various shades of pink, and certain shades of yellow or green.</p>
     
     <ul>
         <li>Green is rare</li>
@@ -88,17 +87,15 @@
     </ul>
 
     <div class="image-container">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Cherry_blossoms_at_the_Imperial_Palace_of_Tokyo.jpg/800px-Cherry_blossoms_at_the_Imperial_Palace_of_Tokyo.jpg" alt="Bright pink cherry blossoms">
-        
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Cherry_Blossoms_at_Ueno_Park.jpg/800px-Cherry_Blossoms_at_Ueno_Park.jpg" alt="Soft pink blossoms in a park">
-        
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Yoshino_Cherry_Blossoms_at_the_National_Arboretum.jpg/800px-Yoshino_Cherry_Blossoms_at_the_National_Arboretum.jpg" alt="Light pink weeping cherry blossoms">
+        <img src="https://images.unsplash.com/photo-1522383225653-ed111181a951?auto=format&fit=crop&w=800&q=80" alt="Bright pink cherry blossoms">
+        <img src="https://images.unsplash.com/photo-1493673272479-a7e6c8369948?auto=format&fit=crop&w=800&q=80" alt="Soft light pink blossoms">
+        <img src="https://images.unsplash.com/photo-1521033029917-5975a2d7d35e?auto=format&fit=crop&w=800&q=80" alt="Deep pink blossoms">
     </div>
 
     <div class="links-section">
         <a href="https://www.nps.gov/subjects/cherryblossom/bloom-development.htm">How different cherry blossom colors develop</a>
-        <a href="https://www.arborday.org/trees/treeguide/treedetail.cfm?itemID=919">Ideal conditions for cherry blossoms to grow</a>
-        <a href="https://www.loc.gov/item/today-in-history/march-27/">The history of cherry blossoms</a>
+        <a href="https://www.arborday.org/trees/treeguide/treedetail.cfm?itemID=919">What conditions cherry blossoms grow in</a>
+        <a href="https://www.loc.gov/item/today-in-history/march-27/">History of cherry blossoms</a>
     </div>
 
 </body>
