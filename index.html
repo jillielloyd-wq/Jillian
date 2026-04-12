@@ -1,58 +1,102 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Cherry Blossoms</title>
-    <style>
-        body {
-            /* A beautiful light cherry-blossom pink */
-            background-color: #FFD1DC; 
-            /* Setting the global font color to white */
-            color: #FFFFFF;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            text-align: center;
-            padding: 50px 20px;
-            margin: 0;
-        }
+    <title>My Cherry Blossom Site</title>
+<style>
+    body { 
+        background-color: #FFD1DC; 
+        color: #FFFFFF; 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        padding: 50px 20px;
+        margin: 0;
+    }
 
-        h1 {
-            font-size: 3.5rem;
-            /* Adding a very soft shadow so white text is easy to read */
-            text-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-            margin-bottom: 10px;
-        }
+    h1 { 
+        font-size: 3.5rem; 
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.1); 
+        margin-bottom: 10px; 
+    }
 
-        p {
-            font-size: 1.4rem;
-            font-weight: 300;
-            margin-bottom: 40px;
-        }
+    p {
+        font-size: 1.4rem; 
+        font-weight: 300; 
+        margin-bottom: 40px; 
+    }
 
-        .image-container {
-            margin-top: 20px;
-        }
+    /* This container makes sure the images fit well on the page */
+    .image-container { 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px; 
+    }
 
-        img {
-            max-width: 80%;
-            width: 600px;
-            border-radius: 20px;
-            /* White border to match the font */
-            border: 10px solid #FFFFFF;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-            transition: transform 0.4s ease;
-        }
+    img {
+        width: 350px; 
+        height: 250px;
+        object-fit: cover; 
+        border-radius: 20px; 
+        /* Your white border */
+        border: 10px solid #FFFFFF; 
+        box-shadow: 0 15px 35px rgba(0,0,0,0.1); 
+        transition: transform 0.4s ease; 
+    }
 
-        img:hover {
-            transform: scale(1.02);
-        }
-    </style>
+    img:hover {
+        transform: scale(1.05);
+    }
+
+    .links-section {
+        margin-top: 60px;
+    }
+
+    .links-section a {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-weight: bold;
+        display: block;
+        margin: 15px 0;
+        font-size: 1.3rem;
+    }
+
+    .links-section a:hover {
+        text-decoration: underline;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+</style>
 </head>
 <body>
 
     <h1>Cherry Blossoms</h1>
     <p>Welcome to my beautiful, pink-themed website.</p>
+    
+    <h2>About the Creator</h2>
+    <p>I am a junior who goes to the Hun school, I like to learn and read, I think Cherry blossoms are very pretty.</p>
+    
+    <ul>
+        <li>Green is rare</li>
+        <li>Yellow is rare</li>
+        <li>Shades of pink are the most common</li>
+    </ul>
 
     <div class="image-container">
-        <img src="http://googleusercontent.com/image_collection/image_retrieval/6460290320600075603_0" alt="Beautiful cherry blossoms in bloom">
+        <img src="https://images.unsplash.com/photo-1522383225653-ed111181a951?auto=format&fit=crop&w=800&q=80" alt="Bright pink cherry blossoms">
+        <img src="https://images.unsplash.com/photo-1493673272479-a7e6c8369948?auto=format&fit=crop&w=800&q=80" alt="Soft light pink blossoms">
+        <img src="https://images.unsplash.com/photo-1521033029917-5975a2d7d35e?auto=format&fit=crop&w=800&q=80" alt="Deep pink blossoms">
+    </div>
+
+    <div class="links-section">
+        <a href="https://www.nps.gov/subjects/cherryblossom/bloom-development.htm">How different cherry blossom colors develop</a>
+        <a href="https://www.arborday.org/trees/treeguide/treedetail.cfm?itemID=919">What conditions cherry blossoms grow in</a>
+        <a href="https://www.loc.gov/item/today-in-history/march-27/">History of cherry blossoms</a>
     </div>
 
 </body>
