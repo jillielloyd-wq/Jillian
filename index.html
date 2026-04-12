@@ -4,6 +4,7 @@
     <title>My Cherry Blossom Site</title>
 <style>
     body { 
+        /* Light cherry-blossom pink background */ 
         background-color: #FFD1DC; 
         color: #FFFFFF; 
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -24,20 +25,22 @@
         margin-bottom: 40px; 
     }
 
-    /* Flexbox helps the 3 images sit side-by-side nicely */
+    /* This container makes the images sit side-by-side */
     .image-container { 
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 25px;
+        gap: 20px;
         margin-top: 20px; 
     }
 
     img {
-        max-width: 100%; 
+        /* This makes all three images the same size regardless of the original file */
         width: 350px; 
+        height: 250px;
+        object-fit: cover; /* This crops them slightly so they don't look stretched */
+        
         border-radius: 20px; 
-        /* The white border you requested */
         border: 10px solid #FFFFFF; 
         box-shadow: 0 15px 35px rgba(0,0,0,0.1); 
         transition: transform 0.4s ease; 
@@ -47,12 +50,9 @@
         transform: scale(1.05);
     }
 
+    /* Links section styling */
     .links-section {
-        margin-top: 50px;
-        background: rgba(255, 255, 255, 0.2); /* Soft box to make links pop */
-        padding: 20px;
-        border-radius: 15px;
-        display: inline-block;
+        margin-top: 60px;
     }
 
     .links-section a {
@@ -61,7 +61,7 @@
         font-weight: bold;
         display: block;
         margin: 15px 0;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     .links-section a:hover {
@@ -71,6 +71,7 @@
     ul {
         list-style-type: none;
         padding: 0;
+        margin-bottom: 40px;
     }
 </style>
 </head>
@@ -90,13 +91,14 @@
     </ul>
 
     <div class="image-container">
-        <img src="https://placehold.co/600x400/FFB7C5/FFFFFF?text=Light+Pink+Blossoms" alt="Light pink cherry blossoms">
-        <img src="https://placehold.co/600x400/F19CBB/FFFFFF?text=Medium+Pink+Blossoms" alt="Medium pink cherry blossoms">
-        <img src="https://placehold.co/600x400/DE3163/FFFFFF?text=Dark+Pink+Blossoms" alt="Dark pink cherry blossoms">
+        <img src="https://images.stockcake.com/public/6/a/e/6ae45611-f0ab-42f6-ab55-c7961defbfc6_large/cherry-blossom-close-up-stockcake.jpg" alt="Cherry blossom close up">
+        
+        <img src="https://travel.rakuten.com/contents/sites/contents/files/styles/max_1300x1300/public/2025-02/yozakura-japan_10.jpg?itok=lXIHqOln" alt="Cherry blossoms at night">
+        
+        <img src="https://www.gardendesign.com/pictures/images/900x705Max/site_3/weeping-cherry-prunussubhirtella-garden-design_11423.jpg" alt="Weeping cherry tree">
     </div>
 
     <div class="links-section">
-        <h3>Explore More</h3>
         <a href="https://www.nps.gov/subjects/cherryblossom/bloom-development.htm">How different cherry blossom colors develop</a>
         <a href="https://www.arborday.org/trees/treeguide/treedetail.cfm?itemID=919">Ideal conditions for cherry blossoms to grow</a>
         <a href="https://www.loc.gov/item/today-in-history/march-27/">The history of cherry blossoms</a>
