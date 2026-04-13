@@ -1,0 +1,18 @@
+<div class="image-container"> 
+    
+    <div class="photo-card"> 
+        <img src="cherry1.jpg" alt="Cherry Blossom 1">
+        <p class="caption">Fun Fact: Cherry blossoms belong to the rose family!</p>
+    </div>
+
+    <div class="photo-card"> 
+        <img src="cherry2.jpg" alt="Cherry Blossom 2">
+        <p class="caption">In Japan, the bloom represents a "time of renewal."</p>
+    </div>
+
+    <div class="photo-card">
+        <img src="cherry3.jpg" alt="Cherry Blossom 3">
+        <p class="caption">Washington D.C. has over 3,000 cherry trees.</p>
+    </div>
+
+</div>
