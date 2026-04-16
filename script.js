@@ -6,25 +6,18 @@ window.onload = function() {
     if (btn) {
         btn.onclick = function() {
             const name = nameInput.value;
-
             if (name.trim() === "") {
                 alert("Please enter a name first! 🌸");
                 return;
             }
-
-            // Displays the name with blossoms
             display.innerHTML = `Welcome <br> 🌸 ${name} 🌸`;
-
-            // Triggers the blizzard blizzard
             createPetals();
         };
     }
 };
 
 function createPetals() {
-    const petalTypes = ["🌸", "💮", "💖", "✨", "🌸"]; 
-    
-    // Creates 200 petals for the blizzard effect
+    const petalTypes = ["🌸", "💮", "💖", "✨"]; 
     for (let i = 0; i < 200; i++) {
         setTimeout(() => {
             const petal = document.createElement("div");
@@ -32,10 +25,7 @@ function createPetals() {
             petal.innerHTML = petalTypes[Math.floor(Math.random() * petalTypes.length)];
             petal.style.left = Math.random() * 100 + "vw";
             petal.style.animationDuration = (Math.random() * 3 + 2) + "s";
-            
-            // Random offset so they pile up naturally
             petal.style.setProperty('--random-offset', Math.random() * 5);
-            
             document.body.appendChild(petal);
         }, i * 15); 
     }
