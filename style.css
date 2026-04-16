@@ -1,4 +1,4 @@
-/* This uses your specific pink #FF8DA1 for the top of the ombre */
+
 body { 
     background: linear-gradient(to bottom, #FF8DA1, #FFD1DC); 
     background-attachment: fixed;
@@ -10,78 +10,51 @@ body {
     min-height: 100vh;
 }
 
-h1 { 
-    font-size: 3rem; 
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.1); 
-    margin-top: 40px;
-}
+h1 { font-size: 3rem; text-shadow: 2px 2px 8px rgba(0,0,0,0.1); }
 
-/* Centered layout that adjusts to screen size */
-.image-container { 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-    margin: 40px auto;
-    max-width: 1200px;
-}
-
-/* White photo cards with rounded corners */
-.photo-card {
-    background: white; 
-    padding: 15px; 
-    border-radius: 25px; 
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    width: 320px;
-}
-
-.photo-card img {
-    width: 100%;
-    height: 230px;
-    object-fit: cover;
-    border-radius: 18px;
-}
-
-.caption {
-    color: #444 !important; /* Darker grey so you can read it on white */
-    font-size: 1rem;
-    margin-top: 15px;
-    font-weight: 500;
-}
-
-/* Link boxes with rounded "pill" corners */
-.links-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    margin: 50px 0;
-}
-
-.links-section a {
-    background: rgba(255, 255, 255, 0.25);
-    color: white;
-    text-decoration: none;
-    padding: 14px 40px;
-    border-radius: 50px; 
-    border: 2px solid white;
-    width: 300px; /* Keeps boxes even */
-    font-weight: bold;
-    transition: 0.3s ease;
-}
-
-.links-section a:hover {
-    background: white;
+/* 2. THE BUTTON (Pill-shaped & matching font) */
+#factButton {
+    background-color: #FFFFFF;
     color: #FF8DA1;
-}
-
-/* Makes the bullet points look cleaner */
-ul {
-    list-style: none;
-    padding: 0;
+    border: 2px solid #FFFFFF;
+    padding: 15px 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px; 
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    margin: 20px 0;
 }
 
-li {
-    margin: 10px 0;
+#factButton:hover {
+    transform: scale(1.05);
+    background-color: #FFD1DC;
 }
+
+/* 3. THE PETALS (Hidden until you click) */
+.petal {
+    position: fixed;
+    top: -50px;
+    font-size: 24px;
+    user-select: none;
+    pointer-events: none;
+    z-index: 9999;
+    animation-name: fall;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fall {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(95vh) rotate(360deg); opacity: 0.8; }
+}
+
+/* KEEPING YOUR OTHER STYLES */
+.image-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; margin: 40px auto; max-width: 1200px; }
+.photo-card { background: white; padding: 15px; border-radius: 25px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 320px; }
+.photo-card img { width: 100%; height: 230px; object-fit: cover; border-radius: 18px; }
+.caption { color: #444 !important; font-size: 1rem; margin-top: 15px; font-weight: 500; }
+.links-section { display: flex; flex-direction: column; align-items: center; gap: 15px; margin: 50px 0; }
+.links-section a { background: rgba(255, 255, 255, 0.25); color: white; text-decoration: none; padding: 14px 40px; border-radius: 50px; border: 2px solid white; width: 300px; font-weight: bold; }
