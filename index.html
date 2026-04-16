@@ -1,48 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Cherry Blossom Site</title>
-    <link rel="stylesheet" href="style.css"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cherry Blossoms</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
     <h1>Cherry Blossoms</h1>
     <p>Welcome to my beautiful, pink-themed website.</p>
 
-    <div style="margin: 30px 0;">
-        <button id="factButton">Click for a Surprise!</button>
+    <div class="input-section">
+        <input type="text" id="userName" placeholder="Enter your name..." />
+        <button id="factButton">Welcome Me! 🌸</button>
     </div>
-    <h2>About the Creator</h2>
-    <p>I am a junior who goes to the Hun school, I like to learn and read, I think Cherry blossoms are very pretty.</p>
 
-    <ul>
-        <li>Green is rare</li>
-        <li>Yellow is rare</li>
-        <li>Shades of pink are the most common</li>
-    </ul>
+    <div id="nameDisplay" style="margin-top: 30px; min-height: 100px;"></div>
 
-    <div class="image-container"> 
-        <div class="photo-card"> 
-            <img src="cherry1.jpg" alt="Cherry Blossom 1">
-            <p class="caption">Fun Fact: Cherry blossoms belong to the rose family!</p>
-        </div>
-
-        <div class="photo-card"> 
-            <img src="cherry2.jpg" alt="Cherry Blossom 2">
-            <p class="caption">In Japan, the bloom represents a "time of renewal."</p>
-        </div>
-
+    <div class="image-container">
         <div class="photo-card">
-            <img src="cherry3.jpg" alt="Cherry Blossom 3">
-            <p class="caption">Washington D.C. has over 3,000 cherry trees.</p>
+            <img src="https://images.unsplash.com/photo-1522383225653-ed111181a951?auto=format&fit=crop&w=800&q=80" alt="Cherry Blossoms">
+            <p class="caption">Beautiful Pink Blooms</p>
+        </div>
+        <div class="photo-card">
+            <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80" alt="Japan Trees">
+            <p class="caption">Spring in Japan</p>
+        </div>
+        <div class="photo-card">
+            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80" alt="Park Path">
+            <p class="caption">A Path of Petals</p>
         </div>
     </div>
 
     <div class="links-section">
-        <a href="https://www.nps.gov/subjects/cherryblossom/bloom-development.htm">How different cherry blossom colors develop</a>
-        <a href="https://www.arborday.org/trees/treeguide/treedetail.cfm?itemID=919">What conditions cherry blossoms grow in</a>
-        <a href="https://www.loc.gov/item/today-in-history/march-27/">History of cherry blossoms</a>
+        <a href="https://www.google.com" target="_blank">Learn More</a>
+        <a href="https://www.instagram.com" target="_blank">Follow the Blossoms</a>
     </div>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
-<script src="script.js"></script>
