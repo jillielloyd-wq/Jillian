@@ -1,15 +1,15 @@
 window.onload = function() {
     const btn = document.getElementById("factButton");
-
-    btn.onclick = function() {
-        alert("🌸 The cherry blossom is the national flower of Japan! 🌸");
-        createPetals();
-    };
+    if (btn) {
+        btn.onclick = function() {
+            alert("🌸 The cherry blossom is the national flower of Japan! 🌸");
+            createPetals();
+        };
+    }
 };
 
 function createPetals() {
     const petalColors = ["🌸", "💮", "💖"]; 
-    
     for (let i = 0; i < 50; i++) {
         setTimeout(() => {
             const petal = document.createElement("div");
