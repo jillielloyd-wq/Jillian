@@ -1,4 +1,3 @@
-
 body { 
     background: linear-gradient(to bottom, #FF8DA1, #FFD1DC); 
     background-attachment: fixed;
@@ -12,7 +11,6 @@ body {
 
 h1 { font-size: 3rem; text-shadow: 2px 2px 8px rgba(0,0,0,0.1); }
 
-/* 2. THE BUTTON (Pill-shaped & matching font) */
 #factButton {
     background-color: #FFFFFF;
     color: #FF8DA1;
@@ -28,12 +26,8 @@ h1 { font-size: 3rem; text-shadow: 2px 2px 8px rgba(0,0,0,0.1); }
     margin: 20px 0;
 }
 
-#factButton:hover {
-    transform: scale(1.05);
-    background-color: #FFD1DC;
-}
+#factButton:hover { transform: scale(1.05); background-color: #FFD1DC; }
 
-/* 3. THE PETALS (Hidden until you click) */
 .petal {
     position: fixed;
     top: -50px;
@@ -51,7 +45,6 @@ h1 { font-size: 3rem; text-shadow: 2px 2px 8px rgba(0,0,0,0.1); }
     100% { transform: translateY(95vh) rotate(360deg); opacity: 0.8; }
 }
 
-/* KEEPING YOUR OTHER STYLES */
 .image-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; margin: 40px auto; max-width: 1200px; }
 .photo-card { background: white; padding: 15px; border-radius: 25px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 320px; }
 .photo-card img { width: 100%; height: 230px; object-fit: cover; border-radius: 18px; }
